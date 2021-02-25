@@ -1,0 +1,50 @@
+{%extends 'base.html'%}
+
+{% block head %}
+<title>{{title_stats['2. name']}}</title>
+{% endblock %}
+
+{% block body %}
+<div class="end_page">
+    <h1>Stock Details</h1>
+    <div class="stock_title">
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+            </tr>
+            {% for key, value in title_stats.items() %}
+            <tr>
+                <td>{{key}}</td>
+                <td>{{value}}</td>
+            </tr>
+            {% endfor %}
+         </table>
+    </div>
+    <h1>Current Stock Performance</h1>
+    <div class="current_stats">
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+            </tr>
+            {% for key, value in cur_stats.items() %}
+            <tr>
+                <td>{{key}}</td>
+                <td>{{value}}</td>
+            </tr>
+            {% endfor %}
+         </table>
+    </div>
+    <div class="report_buttons">
+        <form>
+            <button type="button" onclick="location.href='/analysis_report/'">Show Analysis Report</button>
+            <button type="button" onclick="location.href='/prediction_report/'">Show Prediction Report</button>
+        </form>
+    </div>
+    <h1>Current Stock Graph</h1>
+    <div class="graph_frame">
+        <iframe name="graph_frame" src="/graph_frame/" width="90%" height="400px">Error!!!</iframe>
+    </div>
+</div>
+{% endblock %}

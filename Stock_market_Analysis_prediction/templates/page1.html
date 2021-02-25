@@ -1,0 +1,21 @@
+{%extends 'base.html'%}
+
+{% block head %}
+<title>SMAP</title>
+{% endblock %}
+
+{% block body %}
+<div class = "start_page">
+    <div class = "title_start">
+        <h1>Stock Market Analysis and Prediction Project</h1>
+    </div>
+    <div class ="form_cont">
+        <form action="/" method="POST">
+            <input type="text" name="stock_name" value="Enter Stock Name: " id="stock_name">
+            <input type="date" name="start_date" value="Enter the Starting Date: " id="start_date">
+            <input type="date" name="end_date" value="Enter the End Date: " id="end_date">
+            <input type="submit" name="Submit_button" value="Submit">
+        </form>
+    </div>
+</div>
+{% endblock %}

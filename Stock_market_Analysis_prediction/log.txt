@@ -1,0 +1,119 @@
+
+        <table>
+            <tbody><tr>
+                <th>Name</th>
+                <th>Description</th>
+            </tr>
+            
+            <tr>
+                <td>1. symbol</td>
+                <td>MSFT</td>
+            </tr>
+            
+            <tr>
+                <td>2. name</td>
+                <td>Microsoft Corporation</td>
+            </tr>
+            
+            <tr>
+                <td>3. type</td>
+                <td>Equity</td>
+            </tr>
+            
+            <tr>
+                <td>4. region</td>
+                <td>United States</td>
+            </tr>
+            
+            <tr>
+                <td>5. marketOpen</td>
+                <td>09:30</td>
+            </tr>
+            
+            <tr>
+                <td>6. marketClose</td>
+                <td>16:00</td>
+            </tr>
+            
+            <tr>
+                <td>7. timezone</td>
+                <td>UTC-05</td>
+            </tr>
+            
+            <tr>
+                <td>8. currency</td>
+                <td>USD</td>
+            </tr>
+            
+            <tr>
+                <td>9. matchScore</td>
+                <td>1.0000</td>
+            </tr>
+            
+         </tbody></table>
+    
+        <table>
+            <tbody><tr>
+                <th>Name</th>
+                <th>Description</th>
+            </tr>
+            
+            <tr>
+                <td>symbol</td>
+                <td>MSFT</td>
+            </tr>
+            
+            <tr>
+                <td>open</td>
+                <td>150.0700</td>
+            </tr>
+            
+            <tr>
+                <td>high</td>
+                <td>150.3000</td>
+            </tr>
+            
+            <tr>
+                <td>low</td>
+                <td>148.8200</td>
+            </tr>
+            
+            <tr>
+                <td>price</td>
+                <td>149.5900</td>
+            </tr>
+            
+            <tr>
+                <td>volume</td>
+                <td>15265603</td>
+            </tr>
+            
+            <tr>
+                <td>latest trading day</td>
+                <td>2019-11-22</td>
+            </tr>
+            
+            <tr>
+                <td>previous close</td>
+                <td>149.4800</td>
+            </tr>
+            
+            <tr>
+                <td>change</td>
+                <td>0.1100</td>
+            </tr>
+            
+            <tr>
+                <td>change percent</td>
+                <td>0.0736%</td>
+            </tr>
+            
+         </tbody></table>
+    
+        <form>
+            <button type="button" onclick="location.href='/analysis_report/'">Show Analysis Report</button>
+            <button type="button" onclick="location.href='/prediction_report/'">Show Prediction Report</button>
+        </form>
+    
+        <iframe name="graph_frame" src="/graph_frame/" width="90%" height="400px">Error!!!</iframe>
+    
